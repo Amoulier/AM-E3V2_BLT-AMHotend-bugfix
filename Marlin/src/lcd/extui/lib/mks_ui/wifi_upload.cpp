@@ -76,7 +76,6 @@ const uint32_t ESP_UNKNOWN_ADDR = 0x40001121;   // not used
 const uint32_t ESP_USER_DATA_RAM_ADDR = 0x3FFE8000; // &user data ram
 const uint32_t ESP_IRAM_ADDR = 0x40100000;      // instruction RAM
 const uint32_t ESP_FLASH_ADDR = 0x40200000;     // address of start of Flash
-//const uint32_t ESP_FLASH_READ_STUB_BEGIN = IRAM_ADDR + 0x18;
 
 UPLOAD_STRUCT esp_upload;
 
@@ -284,15 +283,11 @@ EspUploadResult readPacket(uint8_t op, uint32_t *valp, size_t *bodyLen, uint32_t
         if (c == (uint8_t)0xC0) break;
         state = header;
         needBytes = 2;
-
         break;
       case end:   // expecting frame end
         c = uploadPort_read();
-        if (c != (uint8_t)0xC0) {
-          return slipFrame;
-        }
+        if (c != (uint8_t)0xC0) return slipFrame;
         state = done;
-
         break;
 
       case header:  // reading an 8-byte header
@@ -336,8 +331,7 @@ EspUploadResult readPacket(uint8_t op, uint32_t *valp, size_t *bodyLen, uint32_t
         }
       } break;
 
-      default:    // this shouldn't happen
-        return slipState;
+      default: return slipState;  // this shouldn't happen
     }
   }
 
@@ -346,14 +340,7 @@ EspUploadResult readPacket(uint8_t op, uint32_t *valp, size_t *bodyLen, uint32_t
   opRet = (uint8_t)getData(1, hdr, 1);
 
   // Sync packets often provoke a response with a zero opcode instead of ESP_SYNC
-<<<<<<< HEAD
-  if (resp != 0x01 || opRet != op) {
-    //printf("resp %02x %02x\n", resp, opRet); //debug
-    return respHeader;
-  }
-=======
   if (resp != 0x01 || opRet != op) return respHeader;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
 
   return success;
 }
@@ -373,7 +360,6 @@ void _writePacket(const uint8_t *data, size_t len) {
     }
     else {
       outBuf[outIndex++] = *data;
-
     }
     data++;
     --len;
@@ -412,7 +398,6 @@ void sendCommand(uint8_t op, uint32_t checkVal, const uint8_t *data, size_t data
   putData(checkVal, 4, hdr, 4);
 
   // send the packet
-  //flushInput();
   if (op == ESP_SYNC)
     writePacketRaw(hdr, sizeof(hdr), data, dataLen);
   else
@@ -460,14 +445,8 @@ EspUploadResult Sync(uint16_t timeout) {
     for (;;) {
       size_t bodyLen;
       EspUploadResult rc = readPacket(ESP_SYNC, 0, &bodyLen, defaultTimeout);
-<<<<<<< HEAD
-      if (rc != success || bodyLen != 2) {
-        break;
-      }
-=======
       watchdog_refresh();
       if (rc != success || bodyLen != 2) break;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
     }
   }
   //DEBUG
@@ -551,14 +530,9 @@ EspUploadResult flashWriteBlock(uint16_t flashParmVal, uint16_t flashParmMask) {
   // Calculate the block checksum
   cksum = checksum(blkBuf + dataOfst, blkSize, ESP_CHECKSUM_MAGIC);
 
-  for (i = 0; i < 3; i++) {
-    if ((stat = doCommand(ESP_FLASH_DATA, blkBuf, blkBufSize, cksum, 0, blockWriteTimeout)) == success) {
+  for (i = 0; i < 3; i++)
+    if ((stat = doCommand(ESP_FLASH_DATA, blkBuf, blkBufSize, cksum, 0, blockWriteTimeout)) == success)
       break;
-    }
-  }
-
-  //printf("Upload %d\%\n", ftell(&esp_upload.uploadFile) * 100 / esp_upload.fileSize);
-
   return stat;
 }
 
@@ -645,8 +619,7 @@ void upload_spin() {
       esp_upload.state = upload_idle;
       break;
 
-  default:
-    break;
+    default: break;
   }
 }
 

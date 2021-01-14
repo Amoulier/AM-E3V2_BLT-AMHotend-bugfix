@@ -150,10 +150,6 @@ void machine_setting_disp() {
     machine_menu.CalibrationRadius         = CALIBRATION_RADIUS_CN;
 
     machine_menu.LevelingSubXYZConfTitle = XYZ_LEVEL_CONF_TITLE_CN;
-    // machine_menu.ProbeMaxLeft=PROBE_REACH_MAX_LEFT_CN;
-    // machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_CN;
-    // machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_CN;
-    // machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_CN;
 
     machine_menu.TemperatureConfTitle = TEMPERATURE_CONF_TITLE_CN;
     machine_menu.NozzleConf           = NOZZLE_CONF_CN;
@@ -168,7 +164,6 @@ void machine_setting_disp() {
     machine_menu.NozzleMaxTemperature = NOZZLE_MAX_TEMPERATURE_CN;
     machine_menu.Extrude_Min_Temper   = EXTRUD_MIN_TEMPER_CN;
 
-    // machine_menu.HotbedEnable=HOTBED_ENABLE_CN;
     machine_menu.HotbedConfTitle      = HOTBED_CONF_TITLE_CN;
     machine_menu.HotbedAjustType      = HOTBED_ADJUST_CN;
     machine_menu.HotbedMinTemperature = HOTBED_MIN_TEMPERATURE_CN;
@@ -243,7 +238,6 @@ void machine_setting_disp() {
 
     machine_menu.HomeFeedRateConfTitle = HOMEFEEDRATE_CONF_TITLE_CN;
     machine_menu.XY_HomeFeedRate       = X_HOMESPEED_CN;
-    // machine_menu.Y_HomeFeedRate=Y_HOMESPEED_CN;
     machine_menu.Z_HomeFeedRate = Z_HOMESPEED_CN;
 
     machine_menu.AdvancedConfTitle = ADVANCED_CONF_TITLE_CN;
@@ -384,10 +378,6 @@ void machine_setting_disp() {
     machine_menu.CalibrationRadius         = CALIBRATION_RADIUS_T_CN;
 
     machine_menu.LevelingSubXYZConfTitle = XYZ_LEVEL_CONF_TITLE_T_CN;
-    // machine_menu.ProbeMaxLeft=PROBE_REACH_MAX_LEFT_T_CN;
-    // machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_T_CN;
-    // machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_T_CN;
-    // machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_T_CN;
 
     machine_menu.TemperatureConfTitle = TEMPERATURE_CONF_TITLE_T_CN;
     machine_menu.NozzleConf           = NOZZLE_CONF_T_CN;
@@ -402,7 +392,6 @@ void machine_setting_disp() {
     machine_menu.NozzleMaxTemperature = NOZZLE_MAX_TEMPERATURE_T_CN;
     machine_menu.Extrude_Min_Temper   = EXTRUD_MIN_TEMPER_T_CN;
 
-    // machine_menu.HotbedEnable=HOTBED_ENABLE_T_CN;
     machine_menu.HotbedConfTitle      = HOTBED_CONF_TITLE_T_CN;
     machine_menu.HotbedAjustType      = HOTBED_ADJUST_T_CN;
     machine_menu.HotbedMinTemperature = HOTBED_MIN_TEMPERATURE_T_CN;
@@ -477,7 +466,6 @@ void machine_setting_disp() {
 
     machine_menu.HomeFeedRateConfTitle = HOMEFEEDRATE_CONF_TITLE_T_CN;
     machine_menu.XY_HomeFeedRate       = X_HOMESPEED_T_CN;
-    // machine_menu.Y_HomeFeedRate=Y_HOMESPEED_T_CN;
     machine_menu.Z_HomeFeedRate = Z_HOMESPEED_T_CN;
 
     machine_menu.AdvancedConfTitle = ADVANCED_CONF_TITLE_T_CN;
@@ -501,8 +489,6 @@ void machine_setting_disp() {
     machine_menu.key_back    = KEY_BACK_T_CN;
     machine_menu.key_reset   = KEY_REST_T_CN;
     machine_menu.key_confirm = KEY_CONFIRM_T_CN;
-    // machine_menu.high_level = MOTOR_EN_HIGH_LEVEL_T_CN;
-    // machine_menu.low_level = MOTOR_EN_LOW_LEVEL_T_CN;
 
     machine_menu.PausePosText = PAUSE_POSITION_T_CN;
     machine_menu.xPos         = PAUSE_POSITION_X_T_CN;
@@ -621,10 +607,6 @@ void machine_setting_disp() {
     machine_menu.CalibrationRadius         = CALIBRATION_RADIUS_EN;
 
     machine_menu.LevelingSubXYZConfTitle = XYZ_LEVEL_CONF_TITLE_EN;
-    // machine_menu.Level_positon=PROBE_REACH_MAX_LEFT_EN;
-    // machine_menu.ProbeMaxRigh=PROBE_REACH_MAX_RIGHT_EN;
-    // machine_menu.ProbeMaxfront=PROBE_REACH_MAX_FRONT_EN;
-    // machine_menu.ProbeMaxback=PROBE_REACH_MAX_BACK_EN;
 
     machine_menu.TemperatureConfTitle = TEMPERATURE_CONF_TITLE_EN;
     machine_menu.NozzleConf           = NOZZLE_CONF_EN;
@@ -714,7 +696,6 @@ void machine_setting_disp() {
 
     machine_menu.HomeFeedRateConfTitle = HOMEFEEDRATE_CONF_TITLE_EN;
     machine_menu.XY_HomeFeedRate       = X_HOMESPEED_EN;
-    // machine_menu.Y_HomeFeedRate=Y_HOMESPEED_EN;
     machine_menu.Z_HomeFeedRate = Z_HOMESPEED_EN;
 
     machine_menu.AdvancedConfTitle = ADVANCED_CONF_TITLE_EN;
@@ -826,7 +807,6 @@ void disp_language_init() {
 
   about_menu.type_name  = ABOUT_TYPE_TEXT;
   about_menu.firmware_v = ABOUT_VERSION_TEXT;
-  // about_menu.wifi = ABOUT_WIFI_TEXT;
 
   wifi_menu.ip           = WIFI_IP_TEXT;
   wifi_menu.wifi         = WIFI_NAME_TEXT;
@@ -864,7 +844,7 @@ void disp_language_init() {
     tips_menu.joining      = TEXT_WIFI_JOINING_EN;
     tips_menu.failedJoin   = TEXT_WIFI_FAILED_JOIN_EN;
     tips_menu.wifiConected = TEXT_WIFI_WIFI_CONECTED_EN;
-  #endif  //MKS_WIFI_MODULE
+  #endif
   machine_setting_disp();
 
   operation_menu.babystep = TEXT_BABY_STEP_EN;
@@ -926,7 +906,7 @@ void disp_language_init() {
       file_menu.page_down         = PAGE_DOWN_TEXT_CN;
       file_menu.file_loading      = FILE_LOADING_CN;
       file_menu.no_file           = NO_FILE_CN;
-      file_menu.no_file_and_check = NO_FILE_CN;// NO_FILE_AND_CHECK_CN;
+      file_menu.no_file_and_check = NO_FILE_CN;
       //
       extrude_menu.title       = TITLE_EXTRUDE_CN;
       extrude_menu.in          = EXTRUDER_IN_TEXT_CN;
@@ -964,9 +944,6 @@ void disp_language_init() {
       filesys_menu.sd_sys  = SD_CARD_TEXT_CN;
       filesys_menu.usb_sys = U_DISK_TEXT_CN;
       //
-<<<<<<< HEAD
-      more_menu.title   = TITLE_MORE_CN;
-=======
       more_menu.title       = TITLE_MORE_CN;
       TERN_(USER_CMD_1_ENABLE, more_menu.custom1 = MORE_CUSTOM1_TEXT_CN);
       TERN_(USER_CMD_2_ENABLE, more_menu.custom2 = MORE_CUSTOM2_TEXT_CN);
@@ -975,12 +952,8 @@ void disp_language_init() {
       TERN_(USER_CMD_5_ENABLE, more_menu.custom5 = MORE_CUSTOM5_TEXT_CN);
       TERN_(USER_CMD_6_ENABLE, more_menu.custom6 = MORE_CUSTOM6_TEXT_CN);
       TERN_(USER_CMD_7_ENABLE, more_menu.custom7 = MORE_CUSTOM7_TEXT_CN);
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
       // WIFI
       wifi_menu.title = WIFI_TEXT;
-      // wifi_menu.key = WIFI_KEY_TEXT_CN;
-      // wifi_menu.ip = WIFI_IP_TEXT_CN;
-      // wifi_menu.state = WIFI_STA_TEXT_CN;
       wifi_menu.cloud     = CLOUD_TEXT_CN;
       wifi_menu.reconnect = WIFI_RECONNECT_TEXT_CN;
       // CLOUD
@@ -1069,11 +1042,10 @@ void disp_language_init() {
       printing_more_menu.speed      = PRINTING_CHANGESPEED_CN;
       printing_more_menu.temp       = PRINTING_TEMP_CN;
 
-      // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_CN;
       print_file_dialog_menu.confirm               = DIALOG_CONFIRM_CN;
-      print_file_dialog_menu.cancle                = DIALOG_CANCLE_CN;
+      print_file_dialog_menu.cancel                = DIALOG_CANCLE_CN;
       print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_CN;
-      print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_CN;
+      print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_CN;
       print_file_dialog_menu.retry                 = DIALOG_RETRY_CN;
       print_file_dialog_menu.stop                  = DIALOG_STOP_CN;
       print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_CN;
@@ -1167,7 +1139,7 @@ void disp_language_init() {
             file_menu.page_down         = PAGE_DOWN_TEXT_T_CN;
             file_menu.file_loading      = FILE_LOADING_T_CN;
             file_menu.no_file           = NO_FILE_T_CN;
-            file_menu.no_file_and_check = NO_FILE_T_CN;// NO_FILE_AND_CHECK_T_CN;
+            file_menu.no_file_and_check = NO_FILE_T_CN;
             //
             extrude_menu.title       = TITLE_EXTRUDE_T_CN;
             extrude_menu.in          = EXTRUDER_IN_TEXT_T_CN;
@@ -1204,14 +1176,6 @@ void disp_language_init() {
             filesys_menu.sd_sys   = SD_CARD_TEXT_T_CN;
             filesys_menu.usb_sys  = U_DISK_TEXT_T_CN;
             //
-<<<<<<< HEAD
-            more_menu.title = TITLE_MORE_T_CN;
-            // WIFI
-            wifi_menu.title = WIFI_TEXT;
-            // wifi_menu.key = WIFI_KEY_TEXT_CN;
-            // wifi_menu.ip = WIFI_IP_TEXT_CN;
-            // wifi_menu.state= WIFI_STA_TEXT_CN;
-=======
             more_menu.title       = TITLE_MORE_T_CN;
             TERN_(USER_CMD_1_ENABLE, more_menu.custom1 = MORE_CUSTOM1_TEXT_T_CN);
             TERN_(USER_CMD_2_ENABLE, more_menu.custom2 = MORE_CUSTOM2_TEXT_T_CN);
@@ -1222,7 +1186,6 @@ void disp_language_init() {
             TERN_(USER_CMD_7_ENABLE, more_menu.custom7 = MORE_CUSTOM7_TEXT_T_CN);
             // WIFI
             wifi_menu.title     = WIFI_TEXT;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
             wifi_menu.cloud     = CLOUD_TEXT_T_CN;
             wifi_menu.reconnect = WIFI_RECONNECT_TEXT_T_CN;
             // CLOUD
@@ -1260,7 +1223,6 @@ void disp_language_init() {
             filament_menu.filament_dialog_unload_heat_confirm = FILAMENT_DIALOG_UNLOAD_CONFIRM_TIPS_T_CN;
             filament_menu.filament_dialog_unloading           = FILAMENT_DIALOG_UNLOADING_TIPS_T_CN;
             filament_menu.filament_dialog_unload_completed    = FILAMENT_DIALOG_UNLOAD_COMPLETE_TIPS_T_CN;
-
 
             //
             language_menu.title = TITLE_LANGUAGE_T_CN;
@@ -1312,11 +1274,10 @@ void disp_language_init() {
             printing_more_menu.speed      = PRINTING_CHANGESPEED_T_CN;
             printing_more_menu.temp       = PRINTING_TEMP_T_CN;
 
-            // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_CN;
             print_file_dialog_menu.confirm               = DIALOG_CONFIRM_T_CN;
-            print_file_dialog_menu.cancle                = DIALOG_CANCLE_T_CN;
+            print_file_dialog_menu.cancel                = DIALOG_CANCLE_T_CN;
             print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_T_CN;
-            print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_T_CN;
+            print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_T_CN;
             print_file_dialog_menu.retry                 = DIALOG_RETRY_T_CN;
             print_file_dialog_menu.stop                  = DIALOG_STOP_T_CN;
             print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_T_CN;
@@ -1401,7 +1362,7 @@ void disp_language_init() {
             file_menu.page_down         = PAGE_DOWN_TEXT_EN;
             file_menu.file_loading      = FILE_LOADING_EN;
             file_menu.no_file           = NO_FILE_EN;
-            file_menu.no_file_and_check = NO_FILE_EN;// NO_FILE_AND_CHECK_EN;
+            file_menu.no_file_and_check = NO_FILE_EN;
             //
             extrude_menu.title       = TITLE_EXTRUDE_EN;
             extrude_menu.in          = EXTRUDER_IN_TEXT_EN;
@@ -1448,14 +1409,7 @@ void disp_language_init() {
             filesys_menu.sd_sys  = SD_CARD_TEXT_EN;
             filesys_menu.usb_sys = U_DISK_TEXT_EN;
             // WIFI
-<<<<<<< HEAD
-            wifi_menu.title = WIFI_TEXT;
-            // wifi_menu.key = WIFI_KEY_TEXT_EN;
-            // wifi_menu.ip = WIFI_IP_TEXT_EN;
-            // wifi_menu.state = WIFI_STA_TEXT_EN;
-=======
             wifi_menu.title     = WIFI_TEXT;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
             wifi_menu.cloud     = CLOUD_TEXT_EN;
             wifi_menu.reconnect = WIFI_RECONNECT_TEXT_EN;
 
@@ -1542,11 +1496,10 @@ void disp_language_init() {
             printing_more_menu.speed      = PRINTING_CHANGESPEED_EN;
             printing_more_menu.temp       = PRINTING_TEMP_EN;
 
-            // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_EN;
             print_file_dialog_menu.confirm               = DIALOG_CONFIRM_EN;
-            print_file_dialog_menu.cancle                = DIALOG_CANCLE_EN;
+            print_file_dialog_menu.cancel                = DIALOG_CANCLE_EN;
             print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_EN;
-            print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_EN;
+            print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_EN;
             print_file_dialog_menu.retry                 = DIALOG_RETRY_EN;
             print_file_dialog_menu.stop                  = DIALOG_STOP_EN;
             print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_EN;
@@ -1630,7 +1583,7 @@ void disp_language_init() {
             file_menu.page_down         = PAGE_DOWN_TEXT_RU;
             file_menu.file_loading      = FILE_LOADING_RU;
             file_menu.no_file           = NO_FILE_RU;
-            file_menu.no_file_and_check = NO_FILE_RU;// NO_FILE_AND_CHECK_RU;
+            file_menu.no_file_and_check = NO_FILE_RU;
             //
             extrude_menu.title       = TITLE_EXTRUDE_RU;
             extrude_menu.in          = EXTRUDER_IN_TEXT_RU;
@@ -1689,15 +1642,6 @@ void disp_language_init() {
             filesys_menu.sd_sys  = SD_CARD_TEXT_RU;
             filesys_menu.usb_sys = U_DISK_TEXT_RU;
             // WIFI
-<<<<<<< HEAD
-            wifi_menu.title = WIFI_TEXT;
-            // wifi_menu.key = WIFI_KEY_TEXT_RU;
-            // wifi_menu.ip = WIFI_IP_TEXT_RU;
-            // wifi_menu.state = WIFI_STA_TEXT_RU;
-            wifi_menu.cloud     = CLOUD_TEXT_RU;
-            wifi_menu.reconnect = WIFI_RECONNECT_TEXT_RU;
-
-=======
             wifi_menu.title     = WIFI_TEXT;
             wifi_menu.cloud     = CLOUD_TEXT_RU;
             wifi_menu.reconnect = WIFI_RECONNECT_TEXT_RU;
@@ -1795,7 +1739,6 @@ void disp_language_init() {
 
             machine_menu.EncoderConfTitle    = ENCODER_CONF_TITLE_RU;
             machine_menu.EncoderConfText     = ENCODER_CONF_TEXT_RU;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
 
             cloud_menu.title        = TITLE_CLOUD_TEXT_RU;
             cloud_menu.bind         = CLOUD_BINDED_RU;
@@ -1879,11 +1822,10 @@ void disp_language_init() {
             printing_more_menu.manual     = MANUAL_SHUTDOWN_RU;
             printing_more_menu.speed      = PRINTING_CHANGESPEED_RU;
             printing_more_menu.temp       = PRINTING_TEMP_RU;
-            // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_RU;
             print_file_dialog_menu.confirm               = DIALOG_CONFIRM_RU;
-            print_file_dialog_menu.cancle                = DIALOG_CANCLE_RU;
+            print_file_dialog_menu.cancel                = DIALOG_CANCLE_RU;
             print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_RU;
-            print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_RU;
+            print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_RU;
             print_file_dialog_menu.retry                 = DIALOG_RETRY_RU;
             print_file_dialog_menu.stop                  = DIALOG_STOP_RU;
             print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_RU;
@@ -1971,7 +1913,7 @@ void disp_language_init() {
             file_menu.page_down         = PAGE_DOWN_TEXT_SP;
             file_menu.file_loading      = FILE_LOADING_SP;
             file_menu.no_file           = NO_FILE_SP;
-            file_menu.no_file_and_check = NO_FILE_SP;// NO_FILE_AND_CHECK_SP;
+            file_menu.no_file_and_check = NO_FILE_SP;
             //
             extrude_menu.title       = TITLE_EXTRUDE_SP;
             extrude_menu.in          = EXTRUDER_IN_TEXT_SP;
@@ -2031,14 +1973,7 @@ void disp_language_init() {
             filesys_menu.usb_sys = U_DISK_TEXT_SP;
 
             // WIFI
-<<<<<<< HEAD
-            wifi_menu.title = WIFI_TEXT;
-            // wifi_menu.key = WIFI_KEY_TEXT_SP;
-            // wifi_menu.ip = WIFI_IP_TEXT_SP;
-            // wifi_menu.state = WIFI_STA_TEXT_SP;
-=======
             wifi_menu.title     = WIFI_TEXT;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
             wifi_menu.cloud     = CLOUD_TEXT_SP;
             wifi_menu.reconnect = WIFI_RECONNECT_TEXT_SP;
 
@@ -2125,11 +2060,10 @@ void disp_language_init() {
             printing_more_menu.speed      = PRINTING_CHANGESPEED_SP;
             printing_more_menu.temp       = PRINTING_TEMP_SP;
 
-            // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
             print_file_dialog_menu.confirm               = DIALOG_CONFIRM_SP;
-            print_file_dialog_menu.cancle                = DIALOG_CANCLE_SP;
+            print_file_dialog_menu.cancel                = DIALOG_CANCLE_SP;
             print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_SP;
-            print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_SP;
+            print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_SP;
             print_file_dialog_menu.retry                 = DIALOG_RETRY_SP;
             print_file_dialog_menu.stop                  = DIALOG_STOP_SP;
             print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_SP;
@@ -2274,17 +2208,9 @@ void disp_language_init() {
           filesys_menu.usb_sys        = U_DISK_TEXT_FR;
           file_menu.file_loading      = FILE_LOADING_FR;
           file_menu.no_file           = NO_FILE_FR;
-          file_menu.no_file_and_check = NO_FILE_FR;// NO_FILE_AND_CHECK_FR;
+          file_menu.no_file_and_check = NO_FILE_FR;
           // WIFI
-<<<<<<< HEAD
-          wifi_menu.title = WIFI_NAME_TEXT_FR;
-          // wifi_menu.key = WIFI_KEY_TEXT_FR;
-          // wifi_menu.ip = WIFI_IP_TEXT_FR;
-          // wifi_menu.state = WIFI_STA_TEXT_FR;
-          // wifi_menu.cloud = CLOSE_TEXT_FR;
-=======
           wifi_menu.title     = WIFI_NAME_TEXT_FR;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
           wifi_menu.cloud     = CLOUD_TEXT_FR;
           wifi_menu.reconnect = WIFI_RECONNECT_TEXT_FR;
 
@@ -2369,11 +2295,10 @@ void disp_language_init() {
           printing_more_menu.speed      = PRINTING_CHANGESPEED_FR;
           printing_more_menu.temp       = PRINTING_TEMP_FR;
 
-          // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
           print_file_dialog_menu.confirm               = DIALOG_CONFIRM_FR;
-          print_file_dialog_menu.cancle                = DIALOG_CANCLE_FR;
+          print_file_dialog_menu.cancel                = DIALOG_CANCLE_FR;
           print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_FR;
-          print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_FR;
+          print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_FR;
           print_file_dialog_menu.retry                 = DIALOG_RETRY_FR;
           print_file_dialog_menu.stop                  = DIALOG_STOP_FR;
           print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_FR;
@@ -2459,7 +2384,7 @@ void disp_language_init() {
           file_menu.page_down         = PAGE_DOWN_TEXT_IT;
           file_menu.file_loading      = FILE_LOADING_IT;
           file_menu.no_file           = NO_FILE_IT;
-          file_menu.no_file_and_check = NO_FILE_IT;// NO_FILE_AND_CHECK_IT;
+          file_menu.no_file_and_check = NO_FILE_IT;
           //
           extrude_menu.title       = TITLE_EXTRUDE_IT;
           extrude_menu.in          = EXTRUDER_IN_TEXT_IT;
@@ -2519,14 +2444,7 @@ void disp_language_init() {
           filesys_menu.usb_sys = U_DISK_TEXT_IT;
 
           // WIFI
-<<<<<<< HEAD
-          wifi_menu.title = WIFI_NAME_TEXT_IT;
-          // wifi_menu.key = WIFI_KEY_TEXT_IT;
-          // wifi_menu.ip = WIFI_IP_TEXT_IT;
-          // wifi_menu.state = WIFI_STA_TEXT_IT;
-=======
           wifi_menu.title     = WIFI_NAME_TEXT_IT;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
           wifi_menu.cloud     = CLOSE_TEXT_IT;
           wifi_menu.reconnect = WIFI_RECONNECT_TEXT_IT;
 
@@ -2611,11 +2529,10 @@ void disp_language_init() {
           printing_more_menu.temp       = PRINTING_TEMP_IT;
           printing_more_menu.speed      = PRINTING_CHANGESPEED_IT;
 
-          // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_SP;
           print_file_dialog_menu.confirm               = DIALOG_CONFIRM_IT;
-          print_file_dialog_menu.cancle                = DIALOG_CANCLE_IT;
+          print_file_dialog_menu.cancel                = DIALOG_CANCLE_IT;
           print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_IT;
-          print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_IT;
+          print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_IT;
           print_file_dialog_menu.retry                 = DIALOG_RETRY_IT;
           print_file_dialog_menu.stop                  = DIALOG_STOP_IT;
           print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_IT;
@@ -2702,7 +2619,7 @@ void disp_language_init() {
       file_menu.page_down         = PAGE_DOWN_TEXT_EN;
       file_menu.file_loading      = FILE_LOADING_EN;
       file_menu.no_file           = NO_FILE_EN;
-      file_menu.no_file_and_check = NO_FILE_EN;// NO_FILE_AND_CHECK_EN;
+      file_menu.no_file_and_check = NO_FILE_EN;
       //
       extrude_menu.title       = TITLE_EXTRUDE_EN;
       extrude_menu.in          = EXTRUDER_IN_TEXT_EN;
@@ -2735,9 +2652,6 @@ void disp_language_init() {
       set_menu.machine_para = MACHINE_PARA_EN;
       set_menu.eepromSet    = EEPROM_SETTINGS_EN;
       //
-<<<<<<< HEAD
-      more_menu.title   = TITLE_MORE_EN;
-=======
       more_menu.title       = TITLE_MORE_EN;
       TERN_(USER_CMD_1_ENABLE, more_menu.custom1 = MORE_CUSTOM1_TEXT_EN);
       TERN_(USER_CMD_2_ENABLE, more_menu.custom2 = MORE_CUSTOM2_TEXT_EN);
@@ -2746,20 +2660,12 @@ void disp_language_init() {
       TERN_(USER_CMD_5_ENABLE, more_menu.custom5 = MORE_CUSTOM5_TEXT_EN);
       TERN_(USER_CMD_6_ENABLE, more_menu.custom6 = MORE_CUSTOM6_TEXT_EN);
       TERN_(USER_CMD_7_ENABLE, more_menu.custom7 = MORE_CUSTOM7_TEXT_EN);
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
       //
       filesys_menu.title   = TITLE_FILESYS_EN;
       filesys_menu.sd_sys  = SD_CARD_TEXT_EN;
       filesys_menu.usb_sys = U_DISK_TEXT_EN;
       // WIFI
-<<<<<<< HEAD
-      wifi_menu.title = WIFI_TEXT;
-      // wifi_menu.key = WIFI_KEY_TEXT_EN;
-      // wifi_menu.ip = WIFI_IP_TEXT_EN;
-      // wifi_menu.state = WIFI_STA_TEXT_EN;
-=======
       wifi_menu.title     = WIFI_TEXT;
->>>>>>> 8049db20ff3e543af03dbbaa418aa17e630e22a8
       wifi_menu.cloud     = CLOUD_TEXT_EN;
       wifi_menu.reconnect = WIFI_RECONNECT_TEXT_EN;
 
@@ -2846,11 +2752,10 @@ void disp_language_init() {
       printing_more_menu.speed      = PRINTING_CHANGESPEED_EN;
       printing_more_menu.temp       = PRINTING_TEMP_EN;
 
-      // print_file_dialog_menu.title = TITLE_DIALOG_CONFIRM_EN;
       print_file_dialog_menu.confirm               = DIALOG_CONFIRM_EN;
-      print_file_dialog_menu.cancle                = DIALOG_CANCLE_EN;
+      print_file_dialog_menu.cancel                = DIALOG_CANCLE_EN;
       print_file_dialog_menu.print_file            = DIALOG_PRINT_MODEL_EN;
-      print_file_dialog_menu.cancle_print          = DIALOG_CANCEL_PRINT_EN;
+      print_file_dialog_menu.cancel_print          = DIALOG_CANCEL_PRINT_EN;
       print_file_dialog_menu.retry                 = DIALOG_RETRY_EN;
       print_file_dialog_menu.stop                  = DIALOG_STOP_EN;
       print_file_dialog_menu.no_file_print_tips    = DIALOG_ERROR_TIPS1_EN;

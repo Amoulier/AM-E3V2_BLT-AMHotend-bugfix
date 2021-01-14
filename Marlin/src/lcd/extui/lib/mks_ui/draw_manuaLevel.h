@@ -28,7 +28,6 @@
 extern void lv_draw_manualLevel();
 extern void lv_clear_manualLevel();
 
-//extern void disp_temp_ready_print();
 #ifdef __cplusplus
   } /* C-declarations for C++ */
 #endif

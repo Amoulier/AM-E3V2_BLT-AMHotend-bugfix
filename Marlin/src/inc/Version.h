@@ -25,7 +25,7 @@
  * Release version. Leave the Marlin version or apply a custom scheme.
  */
 #ifndef SHORT_BUILD_VERSION
-  #define SHORT_BUILD_VERSION "AM-E3V2-BFix-210208"
+  #define SHORT_BUILD_VERSION "AM-E3V2-BFix-210209"
 #endif
 
 /**
@@ -42,7 +42,7 @@
  * version was tagged.
  */
 #ifndef STRING_DISTRIBUTION_DATE
-  #define STRING_DISTRIBUTION_DATE "2021-02-08"
+  #define STRING_DISTRIBUTION_DATE "2021-02-09"
 #endif
 
 /**
